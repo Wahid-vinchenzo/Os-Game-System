@@ -146,7 +146,20 @@ and results are shown instantly in the browser.
 ---
 
 ## 📸 Screenshots
-![UI](https://i.postimg.cc/B6S5jM96/Screenshot-1.png)
+<div align="center">
+  <img src="https://i.postimg.cc/B6S5jM96/Screenshot-1.png" width="50%">
+  <img src="https://i.postimg.cc/yYvn4D53/Screenshot-2.png" width="50%">
+  <img src="https://i.postimg.cc/cCd7PWBQ/Screenshot-3.png" width="50%">
+  <img src="https://i.postimg.cc/FHYyMD3C/Screenshot-4.png" width="50%">
+</div>
+
+<div align="center">
+  <img src="https://i.postimg.cc/dQnGDz98/Screenshot-5.png" width="50%">
+  <img src="https://i.postimg.cc/rpSrTbmC/Screenshot-6.png" width="50%">
+  <img src="https://i.postimg.cc/ncgjDZ9X/Screenshot-7.png" width="50%">
+  <img src="https://i.postimg.cc/bJyshw48/Screenshot-8.png" width="50%">
+</div>
+
 
 (Add project screenshots here)
 
