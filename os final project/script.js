@@ -56,6 +56,7 @@ document.getElementById("home").classList.remove("hide");
 }
 
 function hideAll(){
+ document.getElementById('cpu').classList.add('hide');
 document.getElementById("home").classList.add("hide");
 document.getElementById("quiz").classList.add("hide");
 document.getElementById("deadlock").classList.add("hide");
@@ -224,5 +225,81 @@ mem[idx]-=proc[i];
 res+=`P${i+1} -> Not Allocated\n`;
 }
 }
+return res;
+}
+
+function openCPU(){
+hideAll();
+document.getElementById("cpu").classList.remove("hide");
+}
+
+function runCPU(){
+
+let bt=document.getElementById("burst").value.split(",").map(Number);
+let pr=document.getElementById("priority").value.split(",").map(Number);
+let tq=Number(document.getElementById("quantum").value);
+
+let out="FCFS\n";
+out+=fcfs(bt);
+
+out+="\nSJF\n";
+out+=sjf(bt);
+
+out+="\nROUND ROBIN\n";
+out+=roundRobin(bt,tq);
+
+out+="\nPRIORITY\n";
+out+=priority(bt,pr);
+
+document.getElementById("cpuResult").innerText=out;
+}
+
+function fcfs(bt){
+let t=0,res="";
+for(let i=0;i<bt.length;i++){
+t+=bt[i];
+res+=`P${i+1} -> Completion: ${t}\n`;
+}
+return res;
+}
+
+function sjf(bt){
+let arr=bt.map((v,i)=>({v,i})).sort((a,b)=>a.v-b.v);
+let t=0,res="";
+arr.forEach(p=>{
+t+=p.v;
+res+=`P${p.i+1} -> Completion: ${t}\n`;
+});
+return res;
+}
+
+function roundRobin(bt,tq){
+let rem=[...bt],t=0,res="",done;
+do{
+done=true;
+for(let i=0;i<bt.length;i++){
+if(rem[i]>0){
+done=false;
+if(rem[i]>tq){
+t+=tq;
+rem[i]-=tq;
+}else{
+t+=rem[i];
+res+=`P${i+1} -> Completion: ${t}\n`;
+rem[i]=0;
+}
+}
+}
+}while(!done);
+return res;
+}
+
+function priority(bt,pr){
+let arr=bt.map((v,i)=>({v,i,p:pr[i]})).sort((a,b)=>a.p-b.p);
+let t=0,res="";
+arr.forEach(p=>{
+t+=p.v;
+res+=`P${p.i+1} -> Completion: ${t}\n`;
+});
 return res;
 }
