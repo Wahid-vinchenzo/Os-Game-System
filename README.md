@@ -1,196 +1,249 @@
-# 🖥️ OS Simulator Project
+<!-- ================= BANNER ================= -->
+<p align="center">
+  <img src="https://i.postimg.cc/NFx8PQfy/5ccfb403-a762-465c-aac0-52c2250e1a95.png" 
+       alt="OS Simulator Banner" width="50%">
+</p>
 
-This project is a **Web-Based Operating System Simulator** developed using  
-**HTML, CSS, and Vanilla JavaScript**.  
-It is designed to help students understand core Operating System concepts  
-through **interactive simulation and visualization**.
+<h1 align="center">🖥️ OS Game System</h1>
+<h3 align="center">A Web-Based Operating System Simulator</h3>
 
+<p align="center">
+<b>Author:</b> Wahid_Vinchenzo <br>
+<b>Theme:</b> Dark Gaming UI <br>
+<b>Tech:</b> HTML | CSS | JavaScript
+</p>
+
+<hr>
+
+<!-- ================= ABOUT ================= -->
+
+<h2>📌 About The Project</h2>
+
+<p>
+This project is a <b>Web-Based Operating System Simulator</b> 
+developed using HTML, CSS and Vanilla JavaScript.
+It helps students understand core Operating System concepts 
+through <b>interactive simulation and visualization</b>.
+</p>
+
+<p>
 The system currently supports:
+</p>
 
-- 🔴 Deadlock Detection  
-- 🟢 Memory Allocation Algorithms  
-- 🎮 OS Quiz System  
+<ul>
+  <li>🔴 Deadlock Detection</li>
+  <li>🟢 Memory Allocation Algorithms</li>
+  <li>⚙ CPU Scheduling Algorithms</li>
+  <li>🎮 OS Quiz System</li>
+</ul>
 
-This project is suitable for **academic purposes, lab demonstrations, and learning**.
+<p>
+This project is suitable for:
+</p>
 
----
+<ul>
+  <li>University lab work</li>
+  <li>Operating System course projects</li>
+  <li>Self learning</li>
+  <li>Demonstrations</li>
+</ul>
 
-## 📌 Project Description
+<hr>
 
-Operating System concepts are often difficult to understand theoretically.  
-This project provides a **practical simulation environment** where users can:
+<!-- ================= OBJECTIVES ================= -->
 
-- Detect deadlock situations using resource allocation matrices  
-- Perform memory allocation using:
-  - First Fit
-  - Best Fit
-  - Worst Fit  
-- Test OS knowledge through an interactive quiz system  
+<h2>🎯 Project Objectives</h2>
 
-All calculations are performed dynamically using JavaScript  
-and results are shown instantly in the browser.
+<ul>
+  <li>Visualize deadlock conditions</li>
+  <li>Demonstrate memory allocation strategies</li>
+  <li>Understand CPU scheduling behavior</li>
+  <li>Provide an interactive learning experience</li>
+  <li>Help students prepare for OS exams</li>
+</ul>
 
----
+<hr>
 
-## 🎯 Objectives
+<!-- ================= FEATURES ================= -->
 
-- Visualize deadlock conditions  
-- Demonstrate memory allocation strategies  
-- Provide an interactive learning experience  
-- Help students prepare for OS exams  
+<h2>⚙ Features</h2>
 
----
+<h3>🔴 Deadlock Detection</h3>
+<ul>
+  <li>Uses Allocation, Request & Available matrices</li>
+  <li>Detects circular wait conditions</li>
+  <li>Shows deadlocked processes</li>
+  <li>Handles multiple resources</li>
+  <li>Banker-style detection logic</li>
+</ul>
 
-## 🚀 Features
+<h3>🟢 Memory Allocation</h3>
+<p><b>Algorithms:</b></p>
+<ul>
+  <li>First Fit</li>
+  <li>Best Fit</li>
+  <li>Worst Fit</li>
+</ul>
 
-### 🔴 Deadlock Detection
-- Accepts Allocation, Request, and Available matrices  
-- Detects circular wait condition  
-- Displays exact deadlocked processes  
-- Handles multiple processes and resources  
-- Implements Banker-style detection logic  
+<p><b>Features:</b></p>
+<ul>
+  <li>Shows allocated blocks</li>
+  <li>Displays remaining memory</li>
+  <li>Handles fragmentation</li>
+  <li>Handles insufficient memory</li>
+</ul>
 
-### 🟢 Memory Allocation
-- Supports:
-  - First Fit
-  - Best Fit
-  - Worst Fit  
-- Shows:
-  - Allocated block
-  - Remaining memory  
-- Handles:
-  - Fragmentation
-  - Insufficient memory cases  
+<h3>⚙ CPU Scheduling</h3>
+<p><b>Algorithms:</b></p>
+<ul>
+  <li>FCFS</li>
+  <li>SJF</li>
+  <li>Round Robin</li>
+  <li>Priority Scheduling</li>
+</ul>
 
-### 🎮 Quiz System
-- 10 MCQ questions  
-- Life system  
-- Score tracking  
-- Auto reset after completion  
+<ul>
+  <li>User defined inputs</li>
+  <li>Shows execution order</li>
+  <li>Displays completion time</li>
+</ul>
 
----
+<h3>🎮 Quiz System</h3>
+<ul>
+  <li>10 MCQ questions</li>
+  <li>Life system</li>
+  <li>Score tracking</li>
+  <li>Auto reset</li>
+</ul>
 
-## 🛠️ Technologies Used
+<hr>
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS)  
+<!-- ================= TECHNOLOGY ================= -->
 
----
+<h2>🛠️ Technologies Used</h2>
 
----
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+</ul>
 
-## ▶️ How to Run
+<hr>
 
-1. Clone repository
+<!-- ================= HOW TO RUN ================= -->
 
-2. Open the project folder  
+<h2>▶️ How To Run</h2>
 
-3. Double click `index.html`  
-   OR  
-   Open it using any browser  
+<ol>
+  <li>Clone this repository</li>
+  <li>Open the project folder</li>
+  <li>Double click <b>index.html</b> <br>
+      OR open it in any browser</li>
+</ol>
 
----
+<hr>
 
-## 🔢 Input Format
+<!-- ================= INPUT FORMAT ================= -->
 
-### Deadlock Detection
+<h2>🔢 Input Format</h2>
 
-**Allocation Matrix**
+<h3>Deadlock</h3>
 
+<pre>
+Allocation:
 1 0 0
-
 0 1 0
-
 0 0 1
 
-**Request Matrix**
-
+Request:
 0 1 0
-
 0 0 1
-
 1 0 0
 
-
-**Available Resources**
-
+Available:
 0 0 0
+</pre>
 
+<h3>Memory Allocation</h3>
 
----
-
-### Memory Allocation
-
-**Memory Blocks**
-
+<pre>
+Memory Blocks:
 100,500,200,300,600
 
-
-**Process Sizes**
-
+Process Sizes:
 212,417,112,426
+</pre>
 
+<h3>CPU Scheduling</h3>
 
----
+<pre>
+Burst Time:
+5,3,8,6
 
-## 🧪 Test Cases
+Priority:
+2,1,3,4
 
-- Positive deadlock cases  
-- Negative (safe state) cases  
-- Exact fit  
-- Fragmentation  
-- Insufficient memory  
-- Stress tests  
+Quantum:
+2
+</pre>
 
----
+<hr>
 
-## 📸 Screenshots
-<div align="center">
-  <img src="https://i.postimg.cc/B6S5jM96/Screenshot-1.png" width="50%">
-  <img src="https://i.postimg.cc/yYvn4D53/Screenshot-2.png" width="50%">
-  <img src="https://i.postimg.cc/cCd7PWBQ/Screenshot-3.png" width="50%">
-  <img src="https://i.postimg.cc/FHYyMD3C/Screenshot-4.png" width="50%">
-</div>
+<!-- ================= SCREENSHOTS ================= -->
 
-<div align="center">
-  <img src="https://i.postimg.cc/dQnGDz98/Screenshot-5.png" width="50%">
-  <img src="https://i.postimg.cc/rpSrTbmC/Screenshot-6.png" width="50%">
-  <img src="https://i.postimg.cc/ncgjDZ9X/Screenshot-7.png" width="50%">
-  <img src="https://i.postimg.cc/bJyshw48/Screenshot-8.png" width="50%">
-</div>
+<h2>📸 Screenshots</h2>
 
+<p align="center">
+  <img src="https://i.postimg.cc/B6S5jM96/Screenshot-1.png" width="45%">
+  <img src="https://i.postimg.cc/yYvn4D53/Screenshot-2.png" width="45%">
+</p>
 
-(Add project screenshots here)
+<p align="center">
+  <img src="https://i.postimg.cc/cCd7PWBQ/Screenshot-3.png" width="45%">
+  <img src="https://i.postimg.cc/FHYyMD3C/Screenshot-4.png" width="45%">
+</p>
 
----
+<p align="center">
+  <img src="https://i.postimg.cc/dQnGDz98/Screenshot-5.png" width="45%">
+  <img src="https://i.postimg.cc/rpSrTbmC/Screenshot-6.png" width="45%">
+</p>
 
-## 🚀 Future Improvements
+<p align="center">
+  <img src="https://i.postimg.cc/ncgjDZ9X/Screenshot-7.png" width="45%">
+  <img src="https://i.postimg.cc/bJyshw48/Screenshot-8.png" width="45%">
+</p>
 
-- Banker's Algorithm  
-- Graphical memory visualization  
-- Process animation  
-- Timer based quiz  
-- Responsive mobile design  
+<hr>
 
----
+<!-- ================= FUTURE ================= -->
 
-## 👨‍💻 Author
+<h2>🚀 Future Improvements</h2>
 
-**Name:** Wahid_Vinchenzo 
- 
+<ul>
+  <li>Full Banker’s Algorithm</li>
+  <li>Graphical memory map</li>
+  <li>Gantt chart visualization</li>
+  <li>Waiting & turnaround time</li>
+  <li>Mobile responsive UI</li>
+</ul>
 
----
+<hr>
 
-## ⭐ Contribution
+<!-- ================= AUTHOR ================= -->
 
-Contributions are welcome!  
-Feel free to fork this repository and submit pull requests.
+<h2>👨‍💻 Author</h2>
 
----
+<p>
+<b>Name:</b> Wahid_Vinchenzo
+</p>
 
-## 📜 License
+<hr>
 
+<!-- ================= LICENSE ================= -->
+
+<h2>📜 License</h2>
+
+<p>
 This project is open-source  
-and free to use for educational purposes.
-
+and free for educational use.
+</p>
