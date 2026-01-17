@@ -14,6 +14,7 @@
 <button onclick="openQuiz()">🎮 Play OS Quiz</button>
 <button onclick="openDeadlock()">⚠ Deadlock Detection</button>
 <button onclick="openMemory()">🧠 Memory Allocation</button>
+<button onclick="openCPU()">⚙ CPU Scheduling</button>
 </div>
 
 <!-- QUIZ -->
@@ -68,6 +69,27 @@
 <button onclick="calculate()">Calculate</button>
 
 <pre id="memResult"></pre>
+
+<button onclick="backHome()">Home</button>
+</div>
+
+
+<!-- CPU SCHEDULING -->
+<div id="cpu" class="box hide">
+<h2>⚙ CPU Scheduling</h2>
+
+<p>Enter Process Burst Times</p>
+<input id="burst" placeholder="5,3,8,6">
+
+<p>Enter Priorities</p>
+<input id="priority" placeholder="2,1,3,4">
+
+<p>Time Quantum</p>
+<input id="quantum" placeholder="2">
+
+<button onclick="runCPU()">Run Algorithms</button>
+
+<pre id="cpuResult"></pre>
 
 <button onclick="backHome()">Home</button>
 </div>
